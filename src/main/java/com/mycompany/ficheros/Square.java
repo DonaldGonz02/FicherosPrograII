@@ -21,8 +21,24 @@ public class Square {
         n=teclado.nextInt();
     }
     
+    public void Estructura(){
+        if (n>=2 && n<=50){
+            for (int i=1; i<=n; i++){
+                for (int j=1;j<=n;j++){
+                System.out.print(" D ");
+                }
+                System.out.println("");
+            }
+        }
+        else{
+            System.out.println("Ingrese un numero entre 2 y 50");
+        }
+            
+    }
+    
     public static void main(String[] args) {
         Square fc= new Square();
         fc.InData();
+        fc.Estructura();
     }
 }
